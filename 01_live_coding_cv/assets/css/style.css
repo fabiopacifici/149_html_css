@@ -1,0 +1,54 @@
+/* Common */
+/* Custom css variables */
+:root
+{
+  --cv-primary-color: #13c8ff;
+}
+
+body
+{
+  margin: 0;
+}
+
+h2
+{
+  color: var(--cv-primary-color);
+  /* color: #cf8b05; */
+}
+
+h3
+{
+  color: black
+}
+
+/* Header */
+header
+{
+  background: #ededed;
+  text-align: center;
+  border-bottom: 1px solid var(--cv-primary-color);
+  /* border-top: 1px solid #cf8b05; */
+  padding: 20px;
+
+}
+
+#avatar
+{
+  width: 80px;
+}
+
+/* Main */
+
+main
+{
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer
+{
+  border-top: 1px solid var(--cv-primary-color);
+  /*  border-top: 1px solid #cf8b05; */
+  padding: 10px;
+}

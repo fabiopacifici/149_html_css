@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intro CSS</title>
+
+
+  <!-- Google Font css (html side)-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Used to keep css rules in a separate file  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- OR in line style block it is read sequentially before or after the stylesheet based on where it is  -->
+  <style>
+    #test {
+      background-color: greenyellow;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <nav id="menu">
+      <a href="">Home</a>
+      <a href="">About</a>
+      <a href="">Contacts</a>
+    </nav>
+  </header>
+
+  <h1>Hello</h1>
+
+
+  <!-- In line css rule (more specific) cannot be overwritten -->
+  <div id="test" style="background-color: purple;">Test</div>
+
+
+  <div class="bot">Lorem, ipsum dolor.</div>
+  <p class="bot">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nobis consectetur, molestiae voluptates
+    temporibus rem iusto laborum cumque vel omnis corporis? Consectetur ullam earum neque corrupti qui laboriosam,
+    commodi veritatis.
+  </p>
+
+
+
+  <div class="card">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusantium molestias explicabo nihil eveniet
+    laboriosam voluptates, distinctio delectus repellendus excepturi voluptatum ad quis itaque modi ut ab? Minima, dolor
+    nisi!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quidem, temporibus ipsa unde ad ullam perspiciatis
+    similique quae nobis quibusdam consequuntur quod facilis in nulla eligendi, dolorem voluptatibus qui repudiandae?
+  </div>
+
+  <div class="card">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error labore nihil commodi eaque veritatis voluptatem.
+    Facere, at aut asperiores ex amet ad, saepe natus cupiditate obcaecati commodi deserunt porro repellendus.
+  </div>
+
+
+
+</body>

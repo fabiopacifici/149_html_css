@@ -1,0 +1,41 @@
+/* 
+CDN Import CSS Side
+
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+ */
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#test {
+  background-color: red;
+}
+
+#menu {
+  background-color: yellow;
+  padding: 1rem 0;
+}
+
+
+.bot {
+  color: red;
+}
+
+
+.card {
+  background-color: black;
+  color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 4px solid red;
+  width: 600px;
+  
+}
+
+
+h1 {
+  background-color: red;
+  color: yellow;
+  font-family: "Pirata One", system-ui;
+}
