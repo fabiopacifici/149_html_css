@@ -13,12 +13,106 @@
     <div class="logo">
       <img src="./assets/img/logo.png" alt="" class="logo_image">
       <span class="logo_text">
-        Tobolist
+        Toboolist
       </span>
     </div>
   </header>
   <!-- /#app_header -->
-  <main id="app_main"></main>
+  <main id="app_main">
+
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <button class="btn btn-primary">Add Task </button>
+          <button class="btn btn-outline-light">Add Section</button>
+        </div>
+        <div class="card-body">
+
+          <details id="new-tasks" open>
+            <summary>New Task</summary>
+            <ul>
+
+              <li>
+                <span class="icon checkmark">&#10004;</span>
+                Mobile app release
+                <span class="badge bg_editorial">Editorial</span>
+              </li>
+
+
+
+            </ul>
+          </details>
+          <!-- /#new-tasks -->
+
+
+          <details id="today-tasks">
+            <summary>Today</summary>
+            <ul>
+
+              <li>
+                <span class="icon checkmark">&#10004;</span>
+                Mobile app release
+                <span class="badge bg_editorial">Editorial</span>
+              </li>
+
+
+              <li>
+                <span class="icon cross">&times;</span>
+                Interview John Doe
+                <span class="badge bg_recruiting">Recruiting</span>
+              </li>
+              <li>
+                <span class="icon checkmark">&#10004;</span>
+                Mobile app release
+                <span class="badge bg_editorial">Editorial</span>
+              </li>
+
+
+              <li>
+                <span class="icon cross">&times;</span>
+                Interview John Doe
+                <span class="badge bg_recruiting">Recruiting</span>
+              </li>
+            </ul>
+          </details>
+          <!-- /#today-tasks -->
+
+          <details id="upcoming-tasks" open>
+            <summary>Upcoming</summary>
+            <ul>
+
+              <li>
+                <span class="icon checkmark">&#10004;</span>
+                Mobile app release
+                <span class="badge bg_editorial">Editorial</span>
+              </li>
+
+
+              <li>
+                <span class="icon cross">&times;</span>
+                Interview John Doe
+                <span class="badge bg_recruiting">Recruiting</span>
+              </li>
+              <li>
+                <span class="icon checkmark">&#10004;</span>
+                Mobile app release
+                <span class="badge bg_editorial">Editorial</span>
+              </li>
+
+
+              <li>
+                <span class="icon cross">&times;</span>
+                Interview John Doe
+                <span class="badge bg_recruiting">Recruiting</span>
+              </li>
+            </ul>
+          </details>
+          <!-- /#upcoming-tasks -->
+        </div>
+      </div>
+    </div>
+
+  </main>
   <!-- /#app_main -->
 </body>
 

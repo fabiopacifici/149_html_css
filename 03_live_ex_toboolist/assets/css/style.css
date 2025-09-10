@@ -1,41 +1,171 @@
 /* #region Common */
-* {
+*
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
 }
 
-body {
-  background-color: #f6f8f9;
+:root
+{
+  --tb-page-bg: #f6f8f9;
+  --tb-light: rgb(192, 192, 192);
+  --tb-lighter: white;
+  --tb-primary: #47adf1;
+  --tb-success: #68c2ac;
+  --tb-danger: #eb5147;
+}
+
+
+body
+{
+  background-color: var(--tb-page-bg);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+ul
+{
+  list-style: none;
+  line-height: 2.5rem;
+}
+
+details
+{
+  margin-bottom: 2rem;
+}
+
+summary
+{
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 /* #endregion Common */
 
+/* #region Utilities */
+/* Layout */
+.container
+{
+  width: 70%;
+  margin: 2rem auto;
+}
 
+/* Buttons */
+.btn
+{
+  display: inline-block;
+  background-color: transparent;
+  border-style: hidden;
+  padding: 0.5rem 1rem;
+  border: 1px solid;
+  font-size: 0.9rem;
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
+}
+
+.btn-primary
+{
+  background-color: var(--tb-primary);
+  color: var(--tb-lighter);
+  border-color: #277cb4;
+}
+
+.btn-outline-light
+{
+  color: var(--tb-light);
+  border-color: var(--tb-light);
+}
+
+/* Colors */
+.bg_editorial
+{
+  background-color: var(--tb-primary);
+}
+
+.bg_recruiting
+{
+  background-color: var(--tb-success);
+}
+
+/* #endregion Utilities */
 
 /* #region Header */
-#app_header{
-  background-color: white;
-  box-shadow: 0 0 10px gray;
+#app_header
+{
+  background-color: var(--tb-lighter);
+  box-shadow: 0 0 10px var(--tb-light);
   padding: 0.5rem 1rem;
 }
 
-.logo_image {
+.logo_image
+{
   vertical-align: middle;
 }
 
-.logo_text{
+.logo_text
+{
   vertical-align: middle;
   font-size: 2.5rem;
   font-weight: 700;
 }
+
 /* #endregion Header */
 
-
-
 /* #region Main */
+.card
+{
+  background: var(--tb-lighter);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px var(--tb-light);
 
+}
+
+.card-header
+{
+  padding: 1rem 2.5rem;
+  border-bottom: 2px solid var(--tb-page-bg);
+  ;
+}
+
+.card-body
+{
+  padding: 2.5rem;
+}
+
+
+.icon
+{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  font-size: 10px;
+  margin-right: 0.5rem;
+}
+
+.checkmark
+{
+  color: var(--tb-success);
+}
+
+.cross
+{
+  color: var(--tb-danger);
+}
+
+
+.badge
+{
+  border: 1px solid;
+  padding: 0.5rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 12px;
+  color: var(--tb-lighter);
+}
 
 /* #endregion Main */
