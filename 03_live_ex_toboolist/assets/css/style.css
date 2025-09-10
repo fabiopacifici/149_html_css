@@ -1,4 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* Common */
 body {
   background-color: #f6f8f9;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Utilities */
+
+
+/* Header */
+#app_header{
+  background-color: white;
+  box-shadow: 0 0 10px gray;
+  padding: 0.5rem 1rem;
+}
+
+.logo_image {
+  vertical-align: middle;
+}
+
+.logo_text{
+  vertical-align: middle;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
