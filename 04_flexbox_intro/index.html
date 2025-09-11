@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Layout</title>
+
+  <style>
+    .container {
+      max-width: 600px;
+      width: 80%;
+      margin: auto;
+    }
+
+    /*.left, .right {
+      display: inline-block;
+      width: 48%;
+    }*/
+
+    .left,
+    .right {
+      float: left;
+      width: 48%;
+    }
+
+
+
+    header {
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    .d-flex {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      background-color: yellow;
+      border: 1px solid;
+
+
+    }
+
+    .square {
+      width: 100px;
+      aspect-ratio: 1 / 1;
+      background-color: blue;
+      margin: 2px;
+
+    }
+
+    .square-sm {
+      width: 30px;
+      aspect-ratio: 1 / 1;
+      background-color: rgb(255, 0, 179);
+      margin: 1px;
+
+    }
+
+    .item {
+
+      background-color: red;
+      margin: 2px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">LOGO</div>
+    <nav>
+      <a href="">Lorem.</a>
+      <a href="">Porro!</a>
+      <a href="">Hic.</a>
+      <a href="">Non.</a>
+    </nav>
+  </header>
+
+
+
+
+
+  <main>
+
+
+
+
+    <div class="container d-flex">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quos eligendi ut beatae nemo similique
+        sequi, tenetur porro adipisci dicta dolores? Ipsum saepe repudiandae commodi et doloremque quae soluta ab.
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quos eligendi ut beatae nemo similique
+        sequi,
+        tenetur porro adipisci dicta dolores? Ipsum saepe repudiandae commodi et doloremque quae soluta ab.
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quos eligendi ut beatae nemo similique
+        sequi,
+        tenetur porro adipisci dicta dolores? Ipsum saepe repudiandae commodi et doloremque quae soluta ab.
+      </p>
+            
+    </div>
+
+
+
+
+    <!--     <div class="container d-flex">
+      <div class="square">
+        <div class="square-sm"></div>
+        <div class="square-sm"></div>
+      </div>
+      <div class="square"></div>
+      <div class="square"></div>
+  
+      <div class="square"></div>
+
+    </div>
+ -->
+
+
+    <!-- 
+    <div class="container d-flex">
+      <div class="item">
+        🧠Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reprehenderit corporis pariatur aperiam
+        magni
+        id quia vero vel? Officia, quo. Blanditiis est voluptate unde laudantium error expedita vitae quia veniam!
+      </div>
+      <div class="item">
+        🍕 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident neque nostrum dolore natus. Aperiam
+        inventore dolores adipisci porro tenetur, maxime quod cum recusandae culpa vel unde voluptatibus placeat animi
+        at.
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum distinctio magnam voluptate cumque excepturi
+        labore dignissimos odit illum iste officia vitae dolorem ipsam necessitatibus nostrum in voluptatem,
+        reprehenderit quis expedita!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum distinctio magnam voluptate cumque excepturi
+        labore dignissimos odit illum iste officia vitae dolorem ipsam necessitatibus nostrum in voluptatem,
+        reprehenderit quis expedita!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum distinctio magnam voluptate cumque excepturi
+        labore dignissimos odit illum iste officia vitae dolorem ipsam necessitatibus nostrum in voluptatem,
+        reprehenderit quis expedita!
+      </div>
+    </div>
+
+ -->
+
+    <!-- Other current options to build layouts -->
+
+    <!--     <div class="container">
+      <div class="left">
+        🍕Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore eveniet suscipit ut? Eos iure itaque quas
+        velit expedita exercitationem excepturi! Consequuntur libero vero reprehenderit quidem laborum quibusdam
+        inventore quos illo?
+      </div>
+      <div class="right">
+        🧠Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi asperiores ipsam temporibus molestiae
+        voluptatibus iusto! Inventore iste ullam dolorem iusto cum eius corrupti neque temporibus reprehenderit labore.
+        Vero, labore tempore!
+      </div>
+    </div>
+ -->
+
+
+
+
+
+    <!-- 90s exaple layout with table ❌ DONT DO IT! NEVER -->
+    <!-- 
+    <div class="container">
+      <table>
+        <tr>
+          <td>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur architecto ad quam delectus omnis! Ex eos molestias qui ipsum quidem ea quis, rem perspiciatis, et quia ab, odio vero unde.
+          </td>
+          <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, dignissimos nostrum pariatur eaque rem optio corrupti labore sint ipsam eius suscipit et fugiat ea quaerat asperiores id porro placeat possimus.</td>
+        </tr>
+      </table>
+    </div> -->
+
+
+  </main>
+
+
+
+</body>
+
+</html>
