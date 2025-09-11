@@ -1,0 +1,49 @@
+/* / strongest selection */
+#test {
+
+}
+
+/* 1. The rule is applied only to the divs that have the starred classe */
+div.starred
+{
+  text-decoration: overline;
+}
+
+/* The rule is applied only to elements inside a div that have the starred class */
+div .starred
+{
+  text-decoration: overline;
+}
+
+
+/* The rule is applied only to direct childs  */
+div > .starred {
+  text-decoration: overline;
+}
+
+
+
+input[type="email"]{
+  color:red;
+}
+
+
+/* Direct child selector */
+.current-div > p {
+
+}
+
+.current-div > div {
+
+}
+
+
+/* Descendent selector */
+
+.current-div p {
+
+}
+
+.current-div div {
+
+}
