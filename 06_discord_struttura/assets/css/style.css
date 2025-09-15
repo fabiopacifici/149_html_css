@@ -1,0 +1,128 @@
+/* 
+- id
+- classi
+- tag
+
+- selettori avanzati
+settore discente
+selettore > discendente diretto
+*/
+
+
+/* Debug */
+
+.debug
+{
+
+  * {
+    border: 1px dashed;
+  }
+
+  header
+  {
+    height: 100px;
+    background-color: green;
+  }
+
+  .container
+  {
+    background-color: rgba(255, 170, 12, 0.753);
+   height: 100%;
+  }
+
+  .container-sm {
+    background-color: pink;
+    height: 100%;
+  }
+
+
+  .jumbotron {
+    background-color: royalblue;
+      height: 400px;
+  }
+
+
+  section {
+    height: 350px;
+    background-color: purple;
+  }
+
+
+  footer {
+    background-color: black;
+    height: 500px;
+  }
+
+}
+
+/* .degug header {} */
+/* .debug .jumbotron {} */
+/* .degug > header {} */
+
+
+/* Common */
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container
+{
+  width: 80%;
+  max-width: 1200px;
+  margin: auto
+}
+
+.container-sm
+{
+  width: 65%;
+  margin: auto;
+}
+
+
+/* Utilities */
+
+.d-flex
+{
+  display: flex;
+}
+
+.justify-content-between
+{
+  justify-content: space-between;
+}
+
+
+.list-unstyled
+{
+  list-style: none;
+}
+
+
+/* Header */
+
+header
+{
+  padding: 0.5rem 0;
+}
+
+
+
+
+/* Main */
+
+.w-70{
+  width: 70%;
+}
+
+.w-30
+{
+  width: 30%;
+}
+
+
+section {
+  padding: 3rem 0;
+}
