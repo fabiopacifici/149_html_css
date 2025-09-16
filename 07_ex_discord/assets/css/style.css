@@ -56,12 +56,20 @@
 /* #endregion Debug */
 
 /*#region Common */
+/* 📌 Ensure to reset the browser styles when you are writing plain css */
 *
 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* 📌 This is critical to ensure images are responsive and never wider than their container */
+img
+{
+  max-width: 100%;
+}
+
+
 
 :root
 {
@@ -77,11 +85,21 @@
 body
 {
   font-family: sans-serif;
+  min-width: 1200px;
 }
 
 section
 {
   padding: 3rem 0;
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+}
+
+p {
+  line-height: 1.5rem;
 }
 
 /*#region Common */
@@ -194,22 +212,26 @@ main
 {}
 
 
-.jumbotron {
+.jumbotron
+{
   background-image: url('../img/jumbo.png');
   background-position: top;
   background-size: cover;
   color: var(--dis-white);
   text-align: center;
 
-  .container-sm {
+  .container-sm
+  {
     padding: 6rem 0;
   }
 
-  h1 {
+  h1
+  {
     font-size: 3rem;
   }
 
-  p.lead {
+  p.lead
+  {
     font-size: 1.15rem;
     padding: 1.5rem 0;
   }
