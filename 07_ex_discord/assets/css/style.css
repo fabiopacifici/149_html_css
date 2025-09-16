@@ -1,0 +1,134 @@
+/* #region Debug */
+
+.debug
+{
+
+  * {
+    border: 1px dashed;
+  }
+
+  header
+  {
+    height: 100px;
+    background-color: green;
+  }
+
+  .container
+  {
+    background-color: rgba(255, 170, 12, 0.753);
+   height: 100%;
+  }
+
+  .container-sm {
+    background-color: pink;
+    height: 100%;
+  }
+
+
+  .jumbotron {
+    background-color: royalblue;
+      height: 400px;
+  }
+
+
+  section {
+    height: 350px;
+    background-color: purple;
+  }
+
+
+  footer {
+    background-color: black;
+    height: 500px;
+  }
+
+}
+
+/* .degug header {} */
+/* .debug .jumbotron {} */
+/* .degug > header {} */
+
+/* #endregion Debug */
+
+/*#region Common */
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dis-white: #ffffff;
+  --dis-dark: #23272a;
+  --dis-light: #f6f6f6;
+  --dis-primary: #3161e0;
+  --dis-secondary: #7289da;
+  --dis-secondary-light: #8ea1e1;
+
+}
+
+section
+{
+  padding: 3rem 0;
+}
+/*#region Common */
+
+/* #region Utilities */
+
+.container
+{
+  width: 80%;
+  max-width: 1200px;
+  margin: auto
+}
+
+.container-sm
+{
+  width: 65%;
+  margin: auto;
+}
+
+.w-70
+{
+  width: 70%;
+}
+
+.w-30
+{
+  width: 30%;
+}
+
+.d-flex
+{
+  display: flex;
+}
+
+.justify-content-between
+{
+  justify-content: space-between;
+}
+
+.list-unstyled
+{
+  list-style: none;
+}
+
+/* #endregion Utilities */
+
+/* #region Header */
+
+header
+{
+  padding: 0.5rem 0;
+}
+
+/* #endregion Header */
+
+/* #region Main */
+main {
+
+}
+
+
+/* #endregion Main */
