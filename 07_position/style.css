@@ -1,0 +1,37 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.container
+{
+  width: 70%;
+  max-width: 1176px;
+  margin: auto
+}
+
+
+.top {
+  position: relative;
+}
+
+.star  {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+}
+
+
+.top:hover .star {
+  display: block;
+}
