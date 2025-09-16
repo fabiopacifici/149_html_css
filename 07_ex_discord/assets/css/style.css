@@ -68,6 +68,10 @@
 
 }
 
+body {
+  font-family: sans-serif;
+}
+
 section
 {
   padding: 3rem 0;
@@ -76,6 +80,7 @@ section
 
 /* #region Utilities */
 
+/* Layout */
 .container
 {
   width: 80%;
@@ -89,6 +94,7 @@ section
   margin: auto;
 }
 
+/* Sizing */
 .w-70
 {
   width: 70%;
@@ -99,6 +105,7 @@ section
   width: 30%;
 }
 
+/* Flex */
 .d-flex
 {
   display: flex;
@@ -109,10 +116,27 @@ section
   justify-content: space-between;
 }
 
+
+/* typograpy - buttons */
 .list-unstyled
 {
   list-style: none;
 }
+
+.btn {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.75rem;
+}
+
+.btn-lg {
+  padding: 0.5rem 0.75rem;
+}
+
+.btn-light{
+  background-color: var(--dis-white);
+  color: var(--dis-dark);
+}
+
 
 /* #endregion Utilities */
 
@@ -121,6 +145,23 @@ section
 header
 {
   padding: 0.5rem 0;
+  background-color: var(--dis-primary);
+
+  .logo img {
+    display: block;
+  }
+  nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a {
+    color: var(--dis-white);
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.9rem;
+  }
 }
 
 /* #endregion Header */
