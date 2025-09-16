@@ -3,7 +3,8 @@
 .debug
 {
 
-  * {
+  *
+  {
     border: 1px dashed;
   }
 
@@ -16,28 +17,32 @@
   .container
   {
     background-color: rgba(255, 170, 12, 0.753);
-   height: 100%;
+    height: 100%;
   }
 
-  .container-sm {
+  .container-sm
+  {
     background-color: pink;
     height: 100%;
   }
 
 
-  .jumbotron {
+  .jumbotron
+  {
     background-color: royalblue;
-      height: 400px;
+    height: 400px;
   }
 
 
-  section {
+  section
+  {
     height: 350px;
     background-color: purple;
   }
 
 
-  footer {
+  footer
+  {
     background-color: black;
     height: 500px;
   }
@@ -58,7 +63,8 @@
   box-sizing: border-box;
 }
 
-:root {
+:root
+{
   --dis-white: #ffffff;
   --dis-dark: #23272a;
   --dis-light: #f6f6f6;
@@ -68,7 +74,8 @@
 
 }
 
-body {
+body
+{
   font-family: sans-serif;
 }
 
@@ -76,6 +83,7 @@ section
 {
   padding: 3rem 0;
 }
+
 /*#region Common */
 
 /* #region Utilities */
@@ -123,20 +131,31 @@ section
   list-style: none;
 }
 
-.btn {
+.btn
+{
+  display: inline-block;
+  text-decoration: none;
   padding: 0.25rem 0.5rem;
   border-radius: 0.75rem;
 }
 
-.btn-lg {
-  padding: 0.5rem 0.75rem;
+.btn-lg
+{
+  padding: 0.75rem 1rem;
+  border-radius: 1.5rem;
 }
 
-.btn-light{
+.btn-light
+{
   background-color: var(--dis-white);
   color: var(--dis-dark);
 }
 
+.btn-dark
+{
+  background-color: var(--dis-dark);
+  color: var(--dis-white);
+}
 
 /* #endregion Utilities */
 
@@ -147,16 +166,20 @@ header
   padding: 0.5rem 0;
   background-color: var(--dis-primary);
 
-  .logo img {
+  .logo img
+  {
     display: block;
   }
-  nav {
+
+  nav
+  {
     align-items: center;
     display: flex;
     justify-content: space-between;
   }
 
-  a {
+  a
+  {
     color: var(--dis-white);
     text-decoration: none;
     padding: 0.25rem 0.5rem;
@@ -167,9 +190,30 @@ header
 /* #endregion Header */
 
 /* #region Main */
-main {
+main
+{}
+
+
+.jumbotron {
+  background-image: url('../img/jumbo.png');
+  background-position: top;
+  background-size: cover;
+  color: var(--dis-white);
+  text-align: center;
+
+  .container-sm {
+    padding: 6rem 0;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p.lead {
+    font-size: 1.15rem;
+    padding: 1.5rem 0;
+  }
 
 }
-
 
 /* #endregion Main */
