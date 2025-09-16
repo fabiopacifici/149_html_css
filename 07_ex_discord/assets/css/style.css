@@ -63,12 +63,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /* 📌 This is critical to ensure images are responsive and never wider than their container */
 img
 {
   max-width: 100%;
 }
 
+a
+{
+  text-decoration: none;
+}
 
 
 :root
@@ -90,15 +95,17 @@ body
 
 section
 {
-  padding: 3rem 0;
+  padding: 5rem 0;
 
-  h2 {
+  h2
+  {
     margin-bottom: 1rem;
     font-size: 2.5rem;
   }
 }
 
-p {
+p
+{
   line-height: 1.5rem;
 }
 
@@ -142,8 +149,18 @@ p {
   justify-content: space-between;
 }
 
+.align-items-center
+{
+  align-items: center;
+}
 
 /* typograpy - buttons */
+
+.text-center
+{
+  text-align: center;
+}
+
 .list-unstyled
 {
   list-style: none;
@@ -174,6 +191,30 @@ p {
   background-color: var(--dis-dark);
   color: var(--dis-white);
 }
+
+.btn-secondary
+{
+  background-color: var(--dis-secondary);
+  color: var(--dis-white);
+}
+
+/* colors */
+.bg-light
+{
+  background-color: var(--dis-light);
+}
+
+/* Spacings */
+.pb-1
+{
+  padding-bottom: 1rem;
+}
+
+.pb-2
+{
+  padding-bottom: 2rem;
+}
+
 
 /* #endregion Utilities */
 
@@ -238,4 +279,116 @@ main
 
 }
 
+
+.wave
+{
+  color: var(--dis-light);
+}
+
+.wave-bottom
+{
+  rotate: 180deg;
+  margin-top: -1rem;
+}
+
+.wave-top
+{
+  margin-bottom: -1rem;
+}
+
+
+
 /* #endregion Main */
+
+footer
+{
+  padding: 2rem 0;
+  background-color: var(--dis-dark);
+
+  ul
+  {
+    line-height: 1.5rem;
+  }
+
+  h3,
+  h4
+  {
+    color: var(--dis-secondary-light);
+    margin-bottom: 1rem;
+  }
+
+  a
+  {
+    color: white;
+
+    &:hover
+    {
+      text-decoration: underline;
+    }
+  }
+
+
+  .languages
+  {
+    gap: 0.5rem;
+    align-items: center;
+    color: white;
+  }
+
+
+  .social
+  {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    color: white;
+  }
+
+}
+
+footer>.container
+{
+  gap: 1rem;
+}
+
+footer>.container>div.company
+{
+  width: 30%;
+}
+
+footer>.container>div.item
+{
+  flex-grow: 1;
+}
+
+
+
+/* Position examples */
+
+/* .jumbotron
+{
+  position: relative;
+}
+
+.icon
+{
+  background-color: blue;
+  display: inline-block;
+  padding: 2px;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: red;
+  transform: translate(-50%, -50%);
+} */
+
+
+header
+{
+  position: sticky;
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+}
