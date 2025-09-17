@@ -1,0 +1,71 @@
+.debug
+{}
+
+/* Common */
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root
+{
+  --bol-primary: #ff6900;
+  --bol-white: white;
+}
+
+/* Utilities */
+.container
+{
+  width: 80%;
+  max-width: 1176px;
+  margin: auto
+}
+
+.d-flex
+{
+  display: flex;
+}
+
+.list-unstyled {
+  list-style: none;
+}
+
+
+
+/* Header */
+#app_header
+{
+  background-color: var(--bol-primary);
+  padding: 0.5rem 0;
+
+  nav
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    .left_menu, .right_menu {
+      min-width:  20%;
+    }
+
+    .right_menu ul {
+      justify-content: end;
+    }
+
+
+    ul.list-unstyled {
+      gap: 0.5rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--bol-white);
+    }
+
+  }
+
+
+}
