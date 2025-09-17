@@ -1,5 +1,11 @@
 .debug
-{}
+{
+  *
+  {
+    border: 1px dashed;
+  }
+
+}
 
 /* Common */
 *
@@ -8,11 +14,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 
 :root
 {
   --bol-primary: #ff6900;
   --bol-white: white;
+  --bol-danger: red;
+  --bol-success: green;
+}
+
+img
+{
+  max-width: 100%;
+  vertical-align: middle;
 }
 
 /* Utilities */
@@ -23,12 +41,20 @@
   margin: auto
 }
 
+.col
+{
+  width: calc(100% / 3 - 1rem);
+}
+
+
+
 .d-flex
 {
   display: flex;
 }
 
-.list-unstyled {
+.list-unstyled
+{
   list-style: none;
 }
 
@@ -47,24 +73,123 @@
     justify-content: space-between;
 
 
-    .left_menu, .right_menu {
-      min-width:  20%;
+    .left_menu,
+    .right_menu
+    {
+      min-width: 20%;
     }
 
-    .right_menu ul {
+    .right_menu ul
+    {
       justify-content: end;
     }
 
 
-    ul.list-unstyled {
+    ul.list-unstyled
+    {
       gap: 0.5rem;
     }
 
-    a {
+    a
+    {
       text-decoration: none;
       color: var(--bol-white);
     }
 
+  }
+
+
+}
+
+
+/* Main */
+
+.jumbotron {
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  background-color: #ff6900;
+  color: var(--bol-white);
+  text-transform: uppercase;
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.products
+{
+
+  .container.d-flex
+  {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+}
+
+
+.card {
+  
+  img.back {
+    display: none;
+  }
+
+  &:hover img.front {
+    display: none;
+  }
+
+  &:hover img.back{
+    display: block;
+  }
+
+
+
+  .top {
+    position: relative;
+
+    .favourites {
+      background-color: var(--bol-white);
+      padding: 0.1rem;
+      position: absolute;
+      top: 0.5rem;
+      right: 0;
+
+    }
+
+
+    .badges {
+      position: absolute;
+      bottom: 2rem;
+      color: var(--bol-white);
+      font-size: 0.8rem;
+
+      .badge {
+        padding: 4px;
+      }
+
+      .discount {
+        background-color: var(--bol-danger);
+      }
+      .category {
+        background-color: var(--bol-success);
+      }
+    }
+
+  }
+
+
+  .bottom {
+
+    h3 {
+      text-transform: uppercase;
+    }
+
+    .current {
+      color: var(--bol-danger);
+      font-weight: 600;
+    }
+    .discounted {
+      text-decoration: line-through;
+    }
   }
 
 
