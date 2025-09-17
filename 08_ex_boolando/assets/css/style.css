@@ -25,6 +25,7 @@ body {
   --bol-white: white;
   --bol-danger: red;
   --bol-success: green;
+  --bol-black: black;
 }
 
 img
@@ -193,4 +194,27 @@ img
   }
 
 
+}
+
+
+#app_footer {
+  background-color: var(--bol-black);
+  color: var(--bol-white);
+  padding: 1rem 0;
+  margin-top: 2rem;
+
+  .container.d-flex{
+    justify-content: space-between;
+  }
+
+  strong {
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+
+
+  a {
+    color: var(--bol-white);
+    text-decoration: none;
+  }
 }
