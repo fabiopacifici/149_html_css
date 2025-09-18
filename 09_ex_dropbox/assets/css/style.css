@@ -1,6 +1,9 @@
 .debug
 {
 
+  * {
+    border: 1px dashed;
+  }
   header
   {
     background-color: red;
@@ -29,6 +32,18 @@
   }
 
 
+  .jumbotron {
+    height: 745px;
+
+  }
+
+
+
+  [class^=col-]{
+    height: 300px;
+  }
+
+
 
 
 }
@@ -43,6 +58,9 @@
   box-sizing: border-box;
 }
 
+:root{
+  --drop-primary: #b4d0e6;
+}
 
 
 
@@ -62,6 +80,23 @@
   margin: auto
 }
 
+.col-35{
+  width: 35%;
+}
+.col-65{
+  width: 65%;
+}
+
+.d-flex
+{
+  display: flex;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /* ? */
+}
 
 /* Header */
 
@@ -81,4 +116,13 @@ header
   }
 
 
+}
+
+
+
+/* Main */
+
+.jumbotron {
+  background-color: var(--drop-primary);
+  
 }
