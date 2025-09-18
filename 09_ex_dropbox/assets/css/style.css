@@ -47,7 +47,9 @@
     height: 300px;
   }
 
-
+  #teams {
+    background-color: purple;
+  }
 
 
 }
