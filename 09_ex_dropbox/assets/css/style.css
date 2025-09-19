@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 .debug
 {
 
@@ -66,8 +68,18 @@
 
 :root
 {
-  --drop-primary: #b4d0e6;
+  --drop-primary: #0061fe;
+  --drop-secondary: #b4d0e6;
+  --drop-black: black;
+  --drop-white: white;
 }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  min-width: 1908px;
+  background-color: whitesmoke;
+}
+
 
 section {
   padding: 150px 0;
@@ -104,6 +116,10 @@ section {
 }
 
 
+.col-5 {
+  width: calc(100% / 5);
+}
+
 .col-33
 {
   width: calc(100% / 3);
@@ -124,22 +140,68 @@ section {
   width: 100%;
 }
 
+
+/* buttons */
+.btn {
+  display: inline-block;
+  padding: 0.5rem;
+  text-decoration: none;
+  background-color: transparent;
+  border-style: none;
+}
+
+.btn-primary {
+  background-color: var(--drop-primary);
+  color: var(--drop-white);
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--drop-secondary);
+  }
+}
+
+
 /* Header */
 
 header
 {
   padding: 1rem;
+  background-color: white;
 
   nav
   {
     display: flex;
+
   }
 
   .left,
   .right
   {
     width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    ul {
+      list-style: none;
+      display: flex;
+
+
+      a{
+        text-decoration: none;
+        padding: 1.5rem 0.5rem;
+
+        &:hover {
+          border-bottom: 1px solid black;
+        }
+      }
+
+    }
   }
+
+  .right{
+    justify-content: end;
+  } 
 
 
 }
@@ -152,4 +214,14 @@ header
 {
   background-color: var(--drop-primary);
 
+}
+
+
+
+/* Footer */
+
+footer {
+  background-color: var(--drop-black);
+  padding: 2rem;
+  color: var(--drop-white);
 }
