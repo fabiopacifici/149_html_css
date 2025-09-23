@@ -59,7 +59,6 @@
 
 
 /* Common */
-
 *
 {
   margin: 0;
@@ -73,16 +72,17 @@
   --drop-secondary: #b4d0e6;
   --drop-black: black;
   --drop-white: white;
+  --drop-light: #dadadd;
 }
 
-html{
+html
+{
   scroll-behavior: smooth;
 }
 
 body
 {
   font-family: "Open Sans", sans-serif;
-  min-width: 1800px;
   background-color: whitesmoke;
 }
 
@@ -130,7 +130,7 @@ section
 {
   display: flex;
   flex-wrap: wrap;
-  /* ? */
+  margin: 0 -1rem;
 }
 
 
@@ -142,6 +142,7 @@ section
 .col-33
 {
   width: calc(100% / 3);
+  padding: 1rem;
 }
 
 .col-35
@@ -157,6 +158,7 @@ section
 .col-100
 {
   width: 100%;
+  padding: 1rem;
 }
 
 
@@ -255,16 +257,76 @@ header
     gap: 2rem;
   }
 
-  .col-65 {
+  .col-65
+  {
     position: relative;
   }
+
   img
   {
-    /* margin-bottom: -5rem; */
-    position: absolute;
-    width: 80%;
+    margin-bottom: -5rem;
+    /* position: absolute;
+    width: 80%; */
 
   }
+}
+
+
+
+#plans
+{
+
+  .card
+  {
+    border: 1px solid var(--drop-light);
+    height: 100%;
+
+    .card-header
+    {
+      border-bottom: 1px solid var(--drop-light);
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    .card-body
+    {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      h3
+      {
+        margin-bottom: 0.5rem;
+      }
+
+
+      .cta .btn
+      {
+        display: block;
+        text-align: center;
+      }
+
+
+    }
+
+
+    ul
+    {
+      list-style: none;
+
+      li
+      {
+        display: flex;
+        align-items: baseline;
+        gap: 0.5rem;
+
+      }
+    }
+
+  }
+
+
 }
 
 
@@ -276,4 +338,108 @@ footer
   background-color: var(--drop-black);
   padding: 2rem;
   color: var(--drop-white);
+}
+
+
+
+
+/* Media Query */
+
+@media screen and (max-width: 1440px)
+{
+
+  header
+  {
+
+    .left,
+    .right
+    {
+      ul
+      {
+        display: none;
+      }
+    }
+  }
+
+
+  .container
+  {
+    width: 80%;
+  }
+
+}
+
+
+@media screen and (max-width: 1200px)
+{
+
+
+  .jumbotron
+  {
+    padding-top: 50px;
+
+    h1
+    {
+      font-size: 48px;
+    }
+  }
+
+  .container
+  {
+    width: 90%;
+  }
+
+  .container-sm
+  {
+    width: 80%;
+  }
+
+
+}
+
+
+@media screen and (max-width: 1024px)
+{
+
+  .jumbotron
+  {
+    img
+    {
+      margin-bottom: 0;
+    }
+
+    .d-flex
+    {
+      flex-wrap: wrap-reverse;
+    }
+
+    .col-35,
+    .col-65
+    {
+      width: 100%;
+    }
+  }
+
+
+
+
+  .col-33
+  {
+    width: 50%;
+  }
+
+}
+
+
+@media screen and (max-width: 685px)
+{
+  .container-sm
+  {
+    width: 90%;
+  }
+
+  .col-33
+  {
+    width: 100%;
+  }
 }

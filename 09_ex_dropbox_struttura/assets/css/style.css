@@ -1,0 +1,171 @@
+.debug
+{
+
+  *
+  {
+    border: 1px dashed;
+  }
+
+  header
+  {
+    background-color: red;
+    height: 80px;
+
+    *
+    {
+      height: 100%;
+    }
+
+    nav
+    {
+      background-color: purple;
+
+      .left
+      {
+        background-color: pink;
+      }
+
+      .right
+      {
+        background-color: yellow;
+      }
+
+    }
+  }
+
+
+  .jumbotron
+  {
+    height: 745px;
+
+  }
+
+
+
+  [class^=col-]
+  {
+    height: 300px;
+  }
+
+  #teams {
+    background-color: purple;
+  }
+
+
+}
+
+
+/* Common */
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root
+{
+  --drop-primary: #b4d0e6;
+  --drop-black: black;
+  --drop-white: white;
+}
+
+section {
+  padding: 150px 0;
+}
+
+/* Utilities */
+.container
+{
+  width: 70%;
+  max-width: 1176px;
+  margin: auto
+}
+
+
+.container-sm
+{
+  width: 60%;
+  max-width: 900px;
+  margin: auto
+}
+
+
+
+.d-flex
+{
+  display: flex;
+}
+
+.row
+{
+  display: flex;
+  flex-wrap: wrap;
+  /* ? */
+}
+
+
+.col-5 {
+  width: calc(100% / 5);
+}
+
+.col-33
+{
+  width: calc(100% / 3);
+}
+
+.col-35
+{
+  width: 35%;
+}
+
+.col-65
+{
+  width: 65%;
+}
+
+.col-100
+{
+  width: 100%;
+}
+
+/* Header */
+
+header
+{
+  padding: 1rem;
+
+  nav
+  {
+    display: flex;
+  }
+
+  .left,
+  .right
+  {
+    width: 50%;
+  }
+
+
+}
+
+
+
+/* Main */
+
+.jumbotron
+{
+  background-color: var(--drop-primary);
+
+}
+
+
+
+/* Footer */
+
+footer {
+  background-color: var(--drop-black);
+  padding: 2rem;
+  color: var(--drop-white);
+}
