@@ -1,0 +1,48 @@
+@media screen and (max-width: 744px)
+{
+  .bottom
+  {
+
+    .left
+    {
+      width: 65%;
+      overflow-y: auto;
+    }
+
+    .right
+    {
+      width: 35%;
+    }
+  }
+
+
+  .container_flex
+  {
+    .album_column
+    {
+      width: calc(100% / 2);
+    }
+
+  }
+
+}
+
+
+@media screen and (max-width: 600px)
+{
+  .bottom
+  {
+
+    .left
+    {
+      width: 100%;
+    }
+
+    .right
+    {
+      display: none;
+    }
+  }
+
+
+}

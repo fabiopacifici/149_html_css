@@ -1,0 +1,145 @@
+/* #region Common */
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  height: 100vh;
+  overflow: hidden;
+}
+
+:root
+{
+  --band-top-height: 112px;
+}
+
+/* .wrapper {
+  overflow-y: auto;
+  height: 100%;
+} */
+
+.debug
+{
+  background-color: red;
+
+  *
+  {
+    border: 1px dashed;
+  }
+
+  .top
+  {
+    background-color: paleturquoise;
+  }
+
+  .bottom
+  {
+    background-color: green;
+  }
+
+  .album_column
+  {
+    height: 200px;
+  }
+}
+
+.top
+{
+  height: var(--band-top-height);
+}
+
+
+
+.bottom
+{
+  height: calc(100% - var(--band-top-height));
+  display: flex;
+
+  .left,
+  .right
+  {
+    height: 100%;
+  }
+
+  .left
+  {
+    width: 70%;
+    overflow-y: auto;
+  }
+
+  .right
+  {
+    width: 30%;
+  }
+}
+
+
+/* Griglia flex */
+.container_flex
+{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+
+  .album_column
+  {
+    width: calc(100% / 4);
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 744px)
+{
+  .bottom
+  {
+  
+    .left
+    {
+      width: 65%;
+      overflow-y: auto;
+    }
+
+    .right
+    {
+      width: 35%;
+    }
+  }
+
+
+    .container_flex
+    {
+      .album_column
+      {
+        width: calc(100% / 2);
+      }
+  
+    }
+
+}
+
+
+@media screen and (max-width: 600px)
+{
+  .bottom
+  {
+
+    .left
+    {
+      width: 100%;
+    }
+
+    .right
+    {
+      display: none;
+    }
+  }
+
+
+}
