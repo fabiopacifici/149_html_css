@@ -1,0 +1,336 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container
+{
+  max-width: 600px;
+  margin: auto;
+  width: 80%;
+}
+
+
+.row
+{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+
+[class^="col-"]
+{
+  padding: 0 1rem;
+}
+
+.col-1
+{
+  width: calc((100% / 12) * 1);
+}
+
+.col-2
+{
+  width: calc((100% / 12) * 2);
+}
+
+.col-3
+{
+  width: calc((100% / 12) * 3);
+}
+
+.col-4
+{
+  width: calc((100% / 12) * 4);
+}
+
+.col-5
+{
+  width: calc((100% / 12) * 5);
+}
+
+.col-6
+{
+  width: 50%;
+}
+
+.col-7
+{
+  width: calc((100% / 12) * 7);
+}
+
+.col-8
+{
+  width: calc((100% / 12) * 8);
+}
+
+.col-9
+{
+  width: calc((100% / 12) * 9);
+}
+
+.col-10
+{
+  width: calc((100% / 12) * 10);
+}
+
+.col-11
+{
+  width: calc((100% / 12) * 11);
+}
+
+.col-12
+{
+  width: 100%;
+}
+
+
+.p-1
+{
+  padding: 0.5rem;
+}
+
+.p-2
+{
+  padding: 0.75rem;
+}
+
+.p-3
+{
+  padding: 1rem;
+}
+
+
+/* Breakpoint SM (small) */
+@media screen and (min-width: 768px)
+{
+
+  .p-sm-1
+  {
+    padding: 0.5rem;
+  }
+
+  .p-sm-2
+  {
+    padding: 0.75rem;
+  }
+
+  .p-sm-3
+  {
+    padding: 1rem;
+  }
+
+  .container
+  {
+    max-width: 720px;
+
+  }
+
+  .col-sm-1
+  {
+    width: calc((100% / 12) * 1);
+  }
+
+  .col-sm-2
+  {
+    width: calc((100% / 12) * 2);
+  }
+
+  .col-sm-3
+  {
+    width: calc((100% / 12) * 3);
+  }
+
+  .col-sm-4
+  {
+    width: calc((100% / 12) * 4);
+  }
+
+
+  .col-sm-5
+  {
+    width: calc((100% / 12) * 5);
+  }
+
+  .col-sm-6
+  {
+    width: 50%;
+  }
+
+  .col-sm-7
+  {
+    width: calc((100% / 12) * 7);
+  }
+
+  .col-sm-8
+  {
+    width: calc((100% / 12) * 8);
+  }
+
+  .col-sm-9
+  {
+    width: calc((100% / 12) * 9);
+  }
+
+  .col-sm-10
+  {
+    width: calc((100% / 12) * 10);
+  }
+
+  .col-sm-11
+  {
+    width: calc((100% / 12) * 11);
+  }
+
+  .col-sm-12
+  {
+    width: 100%;
+  }
+}
+
+/* Breakpoint MD (medium) */
+@media screen and (min-width: 992px)
+{
+  .container
+  {
+    max-width: 968px;
+
+  }
+
+
+  .col-md-1
+  {
+    width: calc((100% / 12) * 1);
+  }
+
+  .col-md-2
+  {
+    width: calc((100% / 12) * 2);
+  }
+
+  .col-md-3
+  {
+    width: calc((100% / 12) * 3);
+  }
+
+  .col-md-4
+  {
+    width: calc((100% / 12) * 4);
+  }
+
+
+  .col-md-5
+  {
+    width: calc((100% / 12) * 5);
+  }
+
+  .col-md-6
+  {
+    width: 50%;
+  }
+
+  .col-md-7
+  {
+    width: calc((100% / 12) * 7);
+  }
+
+  .col-md-8
+  {
+    width: calc((100% / 12) * 8);
+  }
+
+  .col-md-9
+  {
+    width: calc((100% / 12) * 9);
+  }
+
+  .col-md-10
+  {
+    width: calc((100% / 12) * 10);
+  }
+
+  .col-md-11
+  {
+    width: calc((100% / 12) * 11);
+  }
+
+  .col-md-12
+  {
+    width: 100%;
+  }
+}
+
+/* Breakpoint LG (large) */
+@media screen and (min-width: 1200px)
+{
+
+  .container
+  {
+    max-width: 1150px;
+
+  }
+
+  .col-lg-1
+  {
+    width: calc((100% / 12) * 1);
+  }
+
+  .col-lg-2
+  {
+    width: calc((100% / 12) * 2);
+  }
+
+  .col-lg-3
+  {
+    width: calc((100% / 12) * 3);
+  }
+
+  .col-lg-4
+  {
+    width: calc((100% / 12) * 4);
+  }
+
+
+  .col-lg-5
+  {
+    width: calc((100% / 12) * 5);
+  }
+
+  .col-lg-6
+  {
+    width: 50%;
+  }
+
+  .col-lg-7
+  {
+    width: calc((100% / 12) * 7);
+  }
+
+  .col-lg-8
+  {
+    width: calc((100% / 12) * 8);
+  }
+
+  .col-lg-9
+  {
+    width: calc((100% / 12) * 9);
+  }
+
+  .col-lg-10
+  {
+    width: calc((100% / 12) * 10);
+  }
+
+  .col-lg-11
+  {
+    width: calc((100% / 12) * 11);
+  }
+
+  .col-lg-12
+  {
+    width: 100%;
+  }
+}
+

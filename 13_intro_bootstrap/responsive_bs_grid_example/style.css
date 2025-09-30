@@ -1,0 +1,36 @@
+.debug
+{
+  *
+  {
+    border: 1px dashed red;
+  }
+
+  [class^="col-"]
+  {
+    min-height: 200px;
+    background-color: yellow;
+  }
+
+  .row
+  {
+    min-height: 350px;
+
+    background: red;
+  }
+
+  .container
+  {
+    background-color: blue;
+    height: 450px;
+  }
+}
+
+
+
+.card {
+  background-color: whitesmoke;
+  border: 1px solid lightgray;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
