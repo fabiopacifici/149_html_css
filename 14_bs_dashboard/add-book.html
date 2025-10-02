@@ -67,96 +67,91 @@
   <main>
 
     <div class="container pt-5">
-      <h1>Add new Book</h1>
 
-      <form action="" method="get" class="mb-5">
+      <h1>Aggiungi un nuovo libro</h1>
+
+      <form class="row g-3">
+        <div class="col-6">
+          <label for="inputAuthor" class="form-label">Nome Autore</label>
+          <input type="text" class="form-control" id="inputAuthor" placeholder="Insert the author's name" required>
+        </div>
+        <div class="col-6">
+          <label for="inputLastName" class="form-label">Cognome Autore</label>
+          <input type="text" class="form-control" id="inputLastName" placeholder="Insert the author's last name"
+            required>
+        </div>
+        <div class="col-12">
+          <label for="inputTitle" class="form-label">Titolo</label>
+          <input type="text" class="form-control" id="inputTitle" placeholder="Insert the book title" required>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity" required>
+        </div>
+        <div class="col-12 col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select" required>
+            <option selected>Choose...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-12 col-md-4">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip" required>
+        </div>
+
+        <div class="col-12">
 
 
-        <input type="text" name="fullname" id="fullname" placeholder="Your name" required>
-        <input type="number" name="age" id="age" placeholder="Your age" required>
-        <input type="email" name="email" id="email" placeholder="Your email" required>
+          <hr>
+
+          <div class="mb-3">
+            <label for="inputDescription" class="form-label">Note</label>
+            <textarea class="form-control" name="inputDescription" id="inputDescription" rows="3"
+              placeholder="Inserisci eventuali note sul libro"></textarea>
+          </div>
 
 
-        <button type="submit">
-          Send
-        </button>
-
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Aggiungi libro</button>
+        </div>      
+      
       </form>
-
-
-
-
-      <!-- <input type="tipo"> -->
-
-      <input type="text" class="form-control">
-      <input type="number">
-      <input type="color">
-      <input type="checkbox">
-      <input type="radio">
-      <input type="date">
-      <input type="file">
-      <input type="month">
-      <input type="password">
-      <input type="range">
-      <input type="time">
-      <input type="submit">
-
-      <div class="mb-3">
-        <label for="fullname" class="form-label">Name</label>
-        <input type="text" class="form-control" name="fullname" id="fullname" aria-describedby="helpId"
-          placeholder="" />
-        <small id="helpId" class="form-text text-muted">Help text</small>
-      </div>
-
-
-
-      <select name="age" id="age">
-        <option value="18">18</option>
-        <option value="19">19</option>
-        <option value="20">20</option>
-      </select>
-
-      <select name="nations" id="nations">
-        <option value="nation1">nation1</option>
-        <option value="nation2">nation2</option>
-        <option value="nation3">nation3</option>
-      </select>
-
-
-      <div class="mb-3">
-        <label for="" class="form-label">City</label>
-        <select class="form-select" name="" id="">
-          <option selected>Select one</option>
-          <option value="">New Delhi</option>
-          <option value="">Istanbul</option>
-          <option value="">Jakarta</option>
-        </select>
-      </div>
-
-
-
-      <textarea name="" id=""></textarea>
-
-      <div class="mb-3">
-        <label for="" class="form-label">Message</label>
-        <textarea class="form-control" name="" id="" rows="10"></textarea>
-      </div>
-
-
-
-      <input type="submit" value="🤖 submit">
-
-
-
-      <button type="submit" class="btn btn-primary">
-        <i class="bi bi-floppy"></i>
-        Save
-      </button>
-
-
-
-
-
 
     </div>
 
